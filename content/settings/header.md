@@ -1,5 +1,5 @@
 ---
-logo: public/media/ethnikos.jpg
+logo: media/ethnikos.jpg
 navigation:
   - label: Home
     url: /
