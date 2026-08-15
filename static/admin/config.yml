@@ -1,40 +1,8 @@
-# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
-
 backend:
   name: github
   repo: mycreativeusernameis/Ethnikos-Sidirokastrou
 
 media_folder: /static/media
-public_folder: /media
+public_folder: /static
 
-collections:
-  - name: posts
-    label: Posts
-    label_singular: Post
-    folder: /content/posts
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, type: date }
-      - { label: Body, name: body, widget: richtext }
-  - name: settings
-    label: Site Settings
-    files:
-      - name: header
-        label: Header
-        file: content/settings/header.md
-        fields:
-          - label: Logo
-            name: logo
-            widget: string
-
-          - label: Navigation
-            name: navigation
-            widget: list
-            fields:
-              - label: Label
-                name: label
-                widget: string
-
-              - label: URL
-                name: url
-                widget: string
+collections: []

@@ -1,0 +1,24 @@
+collections:
+
+  - name: settings
+    label: Site Settings
+    files:
+      - name: header
+        label: Header
+        file: content/settings/header.md
+        fields:
+          - label: Logo
+            name: logo
+            widget: string
+
+          - label: Navigation
+            name: navigation
+            widget: list
+            fields:
+              - label: Label
+                name: label
+                widget: string
+
+              - label: URL
+                name: url
+                widget: string
