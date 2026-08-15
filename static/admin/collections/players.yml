@@ -1,0 +1,13 @@
+collections:
+  - name: players
+    label: Players
+    label_singular: Player
+    folder: content/players
+    create: true
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Photo, name: photo, widget: image }
+      - { label: Position, name: position, widget: select, options: ["Goalkeeper", "Defender", "Midfielder", "Forward"] }
+      - { label: Number, name: number, widget: number, value_type: int }
+      - { label: Date of Birth, name: birth_date, widget: datetime, type: date }
+      - { label: Biography, name: bio, widget: richtext, required: false }
