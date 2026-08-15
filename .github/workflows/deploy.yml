@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+env:
+  PUBLIC_COMING_SOON: 'true'
 permissions:
   contents: read
   pages: write
