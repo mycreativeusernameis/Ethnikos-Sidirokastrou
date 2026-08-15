@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	const year = new Date().getFullYear();
 
 	const socials = [
@@ -23,7 +25,7 @@
 		<div class="crest-wrap">
 			<div class="crest-glow" aria-hidden="true"></div>
 			<div class="crest-plate" aria-hidden="true"></div>
-			<img src={'/media/ethnikos.png'} alt="Έμβλημα Εθνικού Σιδηροκάστρου" class="crest" />
+			<img src={`${base}/media/ethnikos.png`} alt="Έμβλημα Εθνικού Σιδηροκάστρου" class="crest" />
 		</div>
 
 		<p class="eyebrow">Ποδοσφαιρικός Σύλλογος&nbsp;&middot;&nbsp;Σιδηρόκαστρο</p>
