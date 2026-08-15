@@ -12,8 +12,6 @@
 			navigation: NavItem[];
 		};
 	} = $props();
-
-	console.log(content);
 </script>
 
 <header>

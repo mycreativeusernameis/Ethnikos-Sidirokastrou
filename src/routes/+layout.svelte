@@ -1,15 +1,15 @@
 <script>
-	let { data, children } = $props();
+	let { children } = $props();
+
+	import { PUBLIC_COMING_SOON } from '$env/static/public';
+	import CommingSoonGuard from '../components/CommingSoonGuard.svelte';
+
+	const commingSoon = PUBLIC_COMING_SOON === 'false';
+	console.log('Comming soon', commingSoon, typeof commingSoon);
 </script>
 
-<header>
-	<img src={data.header.logo} alt="Logo" />
-
-	<nav>
-		{#each data.header.navigation as item}
-			<a href={item.url}>{item.label}</a>
-		{/each}
-	</nav>
-</header>
-
-{@render children()}
+{#if !commingSoon}
+	<CommingSoonGuard />
+{:else}
+	{@render children()}
+{/if}

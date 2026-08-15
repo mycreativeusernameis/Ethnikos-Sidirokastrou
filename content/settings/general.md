@@ -1,0 +1,3 @@
+---
+logo: /static/ethnikos.jpg
+---
