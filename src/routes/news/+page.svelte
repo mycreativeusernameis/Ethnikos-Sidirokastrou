@@ -3,7 +3,6 @@
 
 	let { data }: { data: { posts: Post[] } } = $props();
 	// svelte-ignore state_referenced_locally
-	console.log(data);
 </script>
 
 <h1>News</h1>

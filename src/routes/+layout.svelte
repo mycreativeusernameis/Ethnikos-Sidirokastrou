@@ -5,7 +5,6 @@
 	import CommingSoonGuard from '../components/CommingSoonGuard.svelte';
 
 	const commingSoon = PUBLIC_COMING_SOON === 'false';
-	console.log('Comming soon', commingSoon, typeof commingSoon);
 </script>
 
 {#if !commingSoon}
